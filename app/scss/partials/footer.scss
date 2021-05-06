@@ -1,0 +1,23 @@
+.main-footer {
+  margin: 60px 0 40px 0;
+
+  @include media-tablet-959 {
+    margin: 0 0 40px 0;
+  }
+}
+
+.main-container--footer {
+
+  @include media-tablet-959 {
+    padding: 0;
+  }
+}
+
+.main-footer__content {
+  min-height: 330px;
+  background-color: $bg-color-accent;
+}
+
+.blank {
+  height: 1px;
+}
