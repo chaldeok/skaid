@@ -1,0 +1,30 @@
+// ---------- media ------------------------------------
+
+$media-mobile-413: 413px;
+$media-tablet-767: 767px;
+$media-tablet-959: 959px;
+$media-desktop-960: 960px;
+
+@mixin media-mobile-413 {
+  @media (max-width: $media-mobile-413) {
+    @content;
+  }
+}
+
+@mixin media-tablet-767 {
+  @media (max-width: $media-tablet-767) {
+    @content;
+  }
+}
+
+@mixin media-tablet-959 {
+  @media (max-width: $media-tablet-959) {
+    @content;
+  }
+}
+
+@mixin media-desktop-960 {
+  @media (min-width:$media-desktop-960) {
+    @content;
+  }
+}
