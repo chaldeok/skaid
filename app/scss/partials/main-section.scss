@@ -241,6 +241,10 @@
   &.article__img--active {
     visibility: visible;
   }
+
+  @include media-tablet-767 {
+    display: none;
+  }
 }
 
 .company__purchasing {
@@ -256,7 +260,7 @@
   @include media-tablet-767 {
     position: relative;
     width: calc(100% - 20px);
-    height: 45.63px;
+    min-height: 45.63px;
     margin: 0 10px 12px 10px;
   }
 
@@ -278,7 +282,7 @@
   @include media-tablet-767 {
     position: relative;
     width: calc(100% - 20px);
-    height: 45.63px;
+    min-height: 45.63px;
     margin: 0 10px 0 10px;
   }
 
@@ -357,11 +361,22 @@
     margin: 17px 0 0 27px;
   }
 
+  @include media-tablet-767 {
+    margin: 16px 0 10px 22px;
+  }
+
   h3 {
     margin: 0;
+
+    @include media-tablet-767 {
+      font-family: $font-title;
+    }
   }
 }
 
 .company-spoiler {
   background-color: $bg-color-secondary;
+  @media(max-width: 414px) {
+    background-color: $bg-color-default;
+  }
 }
