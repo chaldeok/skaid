@@ -310,7 +310,7 @@
 }
 
 
-//--- form ---//
+//--- form starts ---//
 .main-form {
   display: none;
   background-color: $bg-color-secondary;
@@ -355,6 +355,8 @@
     background-color: darken($bg-color-default, 3%);
   }
 }
+
+//--- form ends ---//
 
 .article__content {
   @include media-tablet-959 {
