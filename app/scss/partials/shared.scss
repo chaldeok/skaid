@@ -1,6 +1,29 @@
+a,
+button {
+  transition: all .23s ease-out;
+}
+
 .main-container {
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 $spacing;
+
+  @media (max-width: 767px) {
+    padding: 0 10px;
+  }
+}
+
+.title-h3 {
+  font-family: $font-text-desktop-title;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: black;
+  margin: 0;
+}
+
+.title-h3--hide {
+  @include media-tablet-959 {
+    display: none;
+  }
 }
